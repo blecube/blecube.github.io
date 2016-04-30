@@ -7,4 +7,4 @@ This web site serves as the game host for the BLE Cube and is a project in co-op
 4. Enter displayPage(2), and submit.
 5. You're now "Logged in" but without a bluetooth connection
 
-####Even Johan Christiansen
+@evenjch
