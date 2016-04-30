@@ -1,0 +1,128 @@
+/**
+ * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
+ *
+ * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+ * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
+ *
+ * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
+ */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+h1 {
+	padding: 0;
+	margin: 0;
+}
+h6 {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+	margin-top: 0px;
+}
+
+.left {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:20%;
+	height:145px;
+}
+
+.middle {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:60%;
+	height:100px;
+}
+
+.right {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:20%;
+	height:100px;
+}
+
+#cubeHolder {
+	padding-top:150px;
+	height: 60%;
+	width: 60%;
+}
+#cubeHolder2 {
+	padding-top:150px;
+	height: 30%;
+	width: 30%;
+}
+
+#disconnectHolder {
+	height: 60%;
+	width: 60%;
+}
+
+#foldHolder {
+	height: 50%;
+	width: 50%;
+}
+
+#logoHolder {
+	height: 40%;
+	width: 40%;
+}
+#linkHolder {
+	height: 33%;
+}
+#backHolder {
+	padding: 10px;
+	height: 75%;
+	width: 75%;
+}
+
+#aboutContent {
+	border:1px solid black;
+	width:50%;
+	height:100%;
+	font-family:verdana;
+	font-size: 1em;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ffffff;
+	padding:15px;
+	padding-bottom:40px;
+	padding-top:0px;
+}
+#content {
+
+	background:#ffffff;
+	padding-bottom:150px; /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:150px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#valign {
+	position:absolute;
+    width: auto;
+    height: auto;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#log {
+	overflow: auto;
+}
