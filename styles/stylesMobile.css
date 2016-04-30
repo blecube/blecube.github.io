@@ -64,8 +64,9 @@ h6 {
 }
 
 #foldHolder {
-	height: 50%;
-	width: 50%;
+	padding-top:150px;
+	height: 75%;
+	width: 75%;
 }
 
 #logoHolder {

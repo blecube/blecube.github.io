@@ -447,23 +447,7 @@
 				
 			
 		}
-/*
-		//Function for disconnecting device on press
-		function stop(event) {
-			log("stop(" + event + ")");
-			try {
-				log("Sender nullere")
-				event.preventDefault();
-			} catch (error) {
-				log(error);
-			}
-			if(sCharacteristicRX) {
-				sCharacteristicRX.stopNotifications().then(() => {
-					sCharacteristicRX.removeEventListener('characteristicvaluechanged', handleCubeSolution);
-				});
-			}
-		}
-*/
+		
 		//Function for disconnecting
 		function disconnectDevice(){
 			if(sCharacteristicRX) {
