@@ -23,7 +23,7 @@
 		
 		document.querySelector('#connect').addEventListener('click', connect);
 		document.querySelector('#disconnect').addEventListener('click', disconnectDevice);
-		document.querySelector('#closeAbout').addEventListener('click', function() {displayPage(0)});
+		document.querySelector('#aboutbackbtn').addEventListener('click', function() {displayPage(0)});
 		document.querySelector('#aboutbtn').addEventListener('click', function() {displayPage(1)});
 		document.querySelector('#backbtn').addEventListener('click', function() {displayPage(2)});
 		document.querySelector('#folditChoice').addEventListener('click', function() {displayPage(3)});
@@ -47,6 +47,8 @@
 					document.querySelector('#aboutbtn').style.display = "flex";
 					document.querySelector('#timer').style.display = "none";
 					document.querySelector('#backbtn').style.display = "none";	
+					document.querySelector('#aboutFooter').style.display = "none";
+					document.querySelector('#aboutbackbtn').style.display = "none";
 					break;
 					
 				case 1:
@@ -61,6 +63,8 @@
 					document.querySelector('#aboutbtn').style.display = "none";
 					document.querySelector('#backbtn').style.display = "none";
 					document.querySelector('#timer').style.display = "none";
+					document.querySelector('#aboutFooter').style.display = "flex";
+					document.querySelector('#aboutbackbtn').style.display = "flex";
 					break;
 				
 				case 2:
@@ -75,6 +79,8 @@
 					document.querySelector('#aboutbtn').style.display = "none";
 					document.querySelector('#backbtn').style.display = "none";
 					document.querySelector('#timer').style.display = "flex";
+					document.querySelector('#aboutFooter').style.display = "none";
+					document.querySelector('#aboutbackbtn').style.display = "none";
 					break;
 					
 				case 3:
@@ -89,6 +95,8 @@
 					document.querySelector('#aboutbtn').style.display = "none";
 					document.querySelector('#backbtn').style.display = "flex";
 					document.querySelector('#timer').style.display = "flex";
+					document.querySelector('#aboutFooter').style.display = "none";
+					document.querySelector('#aboutbackbtn').style.display = "none";
 					randomize(); 	
 					break;
 				
@@ -104,6 +112,8 @@
 					document.querySelector('#aboutbtn').style.display = "none";
 					document.querySelector('#backbtn').style.display = "flex";
 					document.querySelector('#timer').style.display = "flex";
+					document.querySelector('#aboutFooter').style.display = "none";
+					document.querySelector('#aboutbackbtn').style.display = "none";
 					break;
 			}
 		}
