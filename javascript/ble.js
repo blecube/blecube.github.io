@@ -26,8 +26,8 @@
 		document.querySelector('#closeAbout').addEventListener('click', function() {displayPage(0)});
 		document.querySelector('#aboutbtn').addEventListener('click', function() {displayPage(1)});
 		document.querySelector('#backbtn').addEventListener('click', function() {displayPage(2)});
-		document.querySelector('#foldit').addEventListener('click', function() {displayPage(3)});
-		document.querySelector('#simon').addEventListener('click', function() {displayPage(4)});
+		document.querySelector('#folditChoice').addEventListener('click', function() {displayPage(3)});
+		document.querySelector('#lightChoice').addEventListener('click', function() {displayPage(4)});
 		//document.querySelector('#randomize').addEventListener('click', randomize);
 
 
@@ -39,7 +39,7 @@
 					//Display connect button
 					document.querySelector('#header').style.display = "flex";
 					document.querySelector('#button').style.display = "flex";	
-					document.querySelector('#simonGame').style.display = "none";
+					document.querySelector('#lightShow').style.display = "none";
 					document.querySelector('#folditGame').style.display = "none";
 					document.querySelector('#chooseGame').style.display = "none";
 					document.querySelector('#disconnect').style.display = "none";
@@ -53,7 +53,7 @@
 					//Display about pop up
 					document.querySelector('#header').style.display = "flex";
 					document.querySelector('#button').style.display = "none";	
-					document.querySelector('#simonGame').style.display = "none";
+					document.querySelector('#lightShow').style.display = "none";
 					document.querySelector('#folditGame').style.display = "none";
 					document.querySelector('#chooseGame').style.display = "none";
 					document.querySelector('#disconnect').style.display = "none";
@@ -67,7 +67,7 @@
 					//Display menu to choose game
 					document.querySelector('#header').style.display = "flex";
 					document.querySelector('#button').style.display = "none";	
-					document.querySelector('#simonGame').style.display = "none";
+					document.querySelector('#lightShow').style.display = "none";
 					document.querySelector('#folditGame').style.display = "none";
 					document.querySelector('#chooseGame').style.display = "flex";
 					document.querySelector('#disconnect').style.display = "flex";
@@ -81,7 +81,7 @@
 					//Display the game 'Fold it'
 					document.querySelector('#header').style.display = "flex";
 					document.querySelector('#button').style.display = "none";	
-					document.querySelector('#simonGame').style.display = "none";
+					document.querySelector('#lightShow').style.display = "none";
 					document.querySelector('#folditGame').style.display = "flex";
 					document.querySelector('#chooseGame').style.display = "none";
 					document.querySelector('#disconnect').style.display = "flex";	
@@ -96,7 +96,7 @@
 					//Play a light show
 					document.querySelector('#header').style.display = "flex";											//Generate a random unfolded cube when a bluetooth device is connected
 					document.querySelector('#button').style.display = "none";	
-					document.querySelector('#simonGame').style.display = "flex";
+					document.querySelector('#lightShow').style.display = "flex";
 					document.querySelector('#folditGame').style.display = "none";
 					document.querySelector('#chooseGame').style.display = "none";	
 					document.querySelector('#disconnect').style.display = "flex";	

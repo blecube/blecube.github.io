@@ -77,6 +77,7 @@ h6 {
 	height: 33%;
 }
 #backHolder {
+	padding-right:25px;
 	padding: 10px;
 	height: 75%;
 	width: 75%;
