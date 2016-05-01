@@ -36,7 +36,7 @@ h6 {
 	position: relative;
 	float:left;
 	width:80%;
-	height:250px;
+	height:450px;
 }
 
 .rightAboutMid {
@@ -180,6 +180,6 @@ h6 {
 }
 
 #list ol {
-	font-style:italic; font-family:Georgia; font-size: 20px; color:#4400ff;	
+	font-style:italic; font-family:Georgia; font-size: 24px; color:#4400ff;	
 }
-#list ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:12px; color:#5e5e5e; border-left: 1px solid #999; }
+#list ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:14px; color:#5e5e5e; border-left: 1px solid #999; }
