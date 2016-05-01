@@ -22,13 +22,58 @@ h6 {
 	font-size: 14px;
 	margin-top: 0px;
 }
+.leftAboutMid {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:10%;
+	height:250px;
+}
 
+.middleAboutMid {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:80%;
+	height:250px;
+}
+
+.rightAboutMid {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:10%;
+	height:250px;
+}
+.leftAbout {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:10%;
+	height:75px;
+}
+
+.middleAbout {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:80%;
+	height:75px;
+}
+
+.rightAbout {
+	display:inline-block;
+	position: relative;
+	float:left;
+	width:10%;
+	height:75px;
+}
 .left {
 	display:inline-block;
 	position: relative;
 	float:left;
 	width:20%;
-	height:150px;
+	height:145px;
 }
 
 .middle {
@@ -36,7 +81,7 @@ h6 {
 	position: relative;
 	float:left;
 	width:60%;
-	height:150px;
+	height:145px;
 }
 
 .right {
@@ -44,7 +89,7 @@ h6 {
 	position: relative;
 	float:left;
 	width:20%;
-	height:150px;
+	height:145px;
 }
 
 #cubeHolder {
@@ -84,8 +129,8 @@ h6 {
 }
 
 #aboutContent {
-	border:1px solid black;
-	width:50%;
+	margin-top: 40px;
+	width:75%;
 	height:100%;
 	font-family:verdana;
 	font-size: 1em;
