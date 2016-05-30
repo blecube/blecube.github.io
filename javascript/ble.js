@@ -237,7 +237,7 @@
 		//Randomize assignment and use write function to notify cube
 		function randomize() {
 			randomCube();
-			sCharacteristicTX.writeValue(new Uint8Array([solutionA[0], 0, 0, 0, 0, 0, 1, 0]));
+			sCharacteristicTX.writeValue(new Uint8Array([solutionA[0], 0, 0, 0, 0, 0, 0, 0]));
 		}
 		
 		//Function for handling the bluetooth notifications from cube
@@ -253,22 +253,24 @@
 			cubeData[4] = value.getUint8(4);
 			cubeData[5] = value.getUint8(5);
 			testholder = value.getUint8(6);		//Ekstra
+			
+			
+			/*
 			log('Data fra kube: ' + cubeData[0] + ', ' + cubeData[1] + ', ' + cubeData[2] + ', ' + cubeData[3] + ', ' + cubeData[4] + ', ' + cubeData[5]);
 			log(testholder);
-			
+			*/
 			
 			switch(testholder) {
 				case 0:
-					//If the RNG-flag is low, just try solving
-					log('cubedata: ' + cubeData);
-					log('solution: ' + solutionA);
-					solver();
 					break;
 				case 1:
 					//If the RNG-flag is high, randomize assignment and send new data to cube
 					randomize();
 					break;
 				case 2:
+					log('cubedata: ' + cubeData);
+					log('solution: ' + solutionA);
+					solver();
 					break;
 			}
 				
