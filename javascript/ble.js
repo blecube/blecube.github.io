@@ -83,7 +83,7 @@
 					document.querySelector('#timer').style.display = "flex";
 					document.querySelector('#aboutFooter').style.display = "none";
 					document.querySelector('#aboutbackbtn').style.display = "none";
-					sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0]));
+					//sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0]));
 					break;
 					
 				case 3:
@@ -210,7 +210,7 @@
 			.then(service => {
 				log('Got service');
 				bleService = service;
-				return service.getCharacteristic(rxUUID)
+				return service.getCharacteristic(rxUUID);
 			})	
 				
 			.then(characteristic => {
@@ -222,7 +222,7 @@
 			})
 			.then(() => {
 				log('getting TX-char');
-				return bleService.getCharacteristic(txUUID)
+				return bleService.getCharacteristic(txUUID);
 			})
 			.then(characteristic => {
 				sCharacteristicTX = characteristic;
