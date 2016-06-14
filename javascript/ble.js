@@ -83,6 +83,7 @@
 					document.querySelector('#timer').style.display = "flex";
 					document.querySelector('#aboutFooter').style.display = "none";
 					document.querySelector('#aboutbackbtn').style.display = "none";
+					sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0]));
 					break;
 					
 				case 3:
