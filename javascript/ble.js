@@ -130,7 +130,8 @@
 					rngMatrix[i] = rng;
 				}
 				log(rngMatrix);
-				sCharacteristicTX.writeValue(new Uint8Array([rngMatrix[0], rngMatrix[1], rngMatrix[2], rngMatrix[3], rngMatrix[4], rngMatrix[5], 0, 3]))
+				
+			//sCharacteristicTX.writeValue(new Uint8Array([rngMatrix[0], rngMatrix[1], rngMatrix[2], rngMatrix[3], rngMatrix[4], rngMatrix[5], 0, 3]))
 			}
 		}
 		
