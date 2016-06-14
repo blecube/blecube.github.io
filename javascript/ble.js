@@ -124,16 +124,14 @@
 		
 		function lightShow() {
 			var rngMatrix = [];
-			var lightShow = true;
-			while(lightShow) {
-				for(let i = 0; i > 6; i++) {
-					var rng = Math.floor(Math.random()*6);
-					rngMatrix[i] = rng;
-				}
-				log(rngMatrix);
-				
-			//sCharacteristicTX.writeValue(new Uint8Array([rngMatrix[0], rngMatrix[1], rngMatrix[2], rngMatrix[3], rngMatrix[4], rngMatrix[5], 0, 3]))
+			for(let i = 0; i > 6; i++) {
+				var rng = Math.floor(Math.random()*6);
+				rngMatrix[i] = rng;
 			}
+			log(rngMatrix);
+			
+		//sCharacteristicTX.writeValue(new Uint8Array([rngMatrix[0], rngMatrix[1], rngMatrix[2], rngMatrix[3], rngMatrix[4], rngMatrix[5], 0, 3]))
+	
 		}
 		
 		//Function for logging data to the screen. This is used for development.
