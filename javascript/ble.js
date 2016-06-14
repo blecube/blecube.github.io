@@ -124,6 +124,7 @@
 		
 		function lightShow() {
 			var rngMatrix = [];
+			var lightShow = true;
 			while(lightShow) {
 				for(let i = 0; i > 6; i++) {
 					var rng = Math.floor(Math.random()*6);
