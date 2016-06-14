@@ -126,11 +126,11 @@ function solver() {
 		document.getElementById("cubeImage").src = "images/rng/win.png";
 		
 		//Write to nRF with winning flag on
-		sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 3]));
+		sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 2]));
 	}
 	else {
 		log('wrong answer');
-		sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 2]));
+		sCharacteristicTX.writeValue(new Uint8Array([0, 0, 0, 0, 0, 0, 0, 1]));
 	}
 }
 		

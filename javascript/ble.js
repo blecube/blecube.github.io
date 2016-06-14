@@ -21,6 +21,8 @@
 		
 		var testholder;
 		
+
+		//Add Event Listener to all the buttons
 		document.querySelector('#connect').addEventListener('click', connect);
 		document.querySelector('#disconnect').addEventListener('click', disconnectDevice);
 		document.querySelector('#aboutbackbtn').addEventListener('click', function() {displayPage(0)});
@@ -32,7 +34,7 @@
 
 
 		
-		
+		//Function for displaying the correct page
 		function displayPage(lastPage) {
 			switch(lastPage) {
 				case 0:
@@ -97,7 +99,7 @@
 					document.querySelector('#timer').style.display = "flex";
 					document.querySelector('#aboutFooter').style.display = "none";
 					document.querySelector('#aboutbackbtn').style.display = "none";
-					randomize(); 	
+					randomize();	
 					break;
 				
 				case 4:
@@ -271,6 +273,9 @@
 					log('cubedata: ' + cubeData);
 					log('solution: ' + solutionA);
 					solver();
+					break;
+				case 3:
+					displayPage(4);
 					break;
 			}
 				
