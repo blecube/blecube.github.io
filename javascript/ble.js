@@ -242,7 +242,7 @@
 		//Randomize assignment and use write function to notify cube
 		function randomize() {
 			randomCube();
-			sCharacteristicTX.writeValue(new Uint8Array([solutionA[0], 0, 0, 0, 0, 0, 0, 0]));
+			sCharacteristicTX.writeValue(new Uint8Array([solutionA[0], 0, 0, 0, 0, 0, 1, 0]));
 		}
 		
 		//Function for handling the bluetooth notifications from cube
