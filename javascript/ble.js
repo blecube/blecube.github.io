@@ -126,7 +126,7 @@
 		
 		//Function for logging data to the screen. This is used for development.
 		function log(text) {
-			document.querySelector('#log').textContent += '> ' + text + '\n';
+			//document.querySelector('#log').textContent += '> ' + text + '\n';
 		}
 
 		//Function for clearing the logged data of the above function.
