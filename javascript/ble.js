@@ -201,7 +201,7 @@
 				{services:[txUUID]}
 				]
 			})
-			.then(device => device.connectGATT())
+			.then(device => device.gatt.connect())
 			.then(server => {
 				log('Got server');
 				sServer = server;
